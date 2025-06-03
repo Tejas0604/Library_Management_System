@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Labrary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_location"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="52dp"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_heading" />
+
+    <EditText
+        android:id="@+id/et_location2"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:hint="Fee"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_seat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_end_time"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <EditText
+        android:id="@+id/et_building"
+        android:layout_width="299dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:hint="location"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_location" />
+
+    <EditText
+        android:id="@+id/et_floor"
+        android:layout_width="297dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:hint="Floor"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_building" />
+
+    <EditText
+        android:id="@+id/et_room"
+        android:layout_width="298dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:hint="Room"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_floor" />
+
+    <EditText
+        android:id="@+id/et_seats"
+        android:layout_width="298dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:hint="No. of Seats"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_room" />
+
+    <EditText
+        android:id="@+id/et_start_time"
+        android:layout_width="292dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:hint="Start Time (e.g., 10:00 AM)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_seats" />
+
+    <EditText
+        android:id="@+id/et_end_time"
+        android:layout_width="288dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:hint="End Time (e.g., 12:00 PM)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_start_time" />
+
+    <Button
+        android:id="@+id/btn_add_seat"
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="116dp"
+        android:text="Add Labrary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_end_time" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
