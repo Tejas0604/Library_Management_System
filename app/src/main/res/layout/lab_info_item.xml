@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    android:elevation="6dp">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/labName" android:textStyle="bold" android:textSize="18sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/labLocation" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/labRoom" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/labFloor" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/labSeats" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/labStartTime" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/labEndTime" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/labFee" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

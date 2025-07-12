@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/app_bg"
+    tools:context=".AdminFirstPage">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#fff"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/lavender_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Library Info"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#2F346F"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:hint="Library Name"
+                android:background="@drawable/lavender_border"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/baseline_home_work_24"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/et_location2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Fee"
+                android:inputType="number"
+                android:background="@drawable/lavender_border"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/baseline_currency_rupee_24"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/et_building"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Location / Building"
+                android:background="@drawable/lavender_border"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/baseline_edit_location_24"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/et_floor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Floor Number"
+                android:inputType="number"
+                android:background="@drawable/lavender_border"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/baseline_stairs_24"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/et_room"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Room Number"
+                android:inputType="number"
+                android:background="@drawable/lavender_border"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/baseline_meeting_room_24"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/et_seats"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Total Seats (Min 10)"
+                android:inputType="number"
+                android:background="@drawable/lavender_border"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/baseline_meeting_room_24"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/et_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/lavender_border"
+                android:drawableLeft="@drawable/baseline_schedule_24"
+                android:drawablePadding="8dp"
+                android:hint="Start Time (e.g., 10:00 AM)"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="End Time (e.g., 12:00 PM)"
+                android:background="@drawable/lavender_border"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/baseline_schedule_24"
+                android:drawablePadding="8dp" />
+
+            <Button
+                android:id="@+id/btn_add_seat"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Add Library"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"
+                android:backgroundTint="#2E4585"
+                android:textColor="#fff"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

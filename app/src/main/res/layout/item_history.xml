@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="#FFFFFF"> <!-- or use @drawable/bg_card if you have it -->
+
+    <TextView
+        android:id="@+id/tvLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏢 Library: XYZ"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💺 Seat: 5"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📅 Plan: 3 Months"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📆 End: 25 Aug 2025"
+        android:textSize="16sp" />
+</LinearLayout>

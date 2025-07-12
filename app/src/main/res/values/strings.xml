@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Library Management</string>
+    <string-array name="membership_plans">
+        <item>1 Month</item>
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>1 Year</item>
+    </string-array>
+
+
+</resources>
